@@ -1,0 +1,74 @@
+<!-- FILE: stripflow-support.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>StripFlow Support</title>
+  <meta name="description" content="Support page for StripFlow." />
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; line-height: 1.5; }
+    header, main, footer { max-width: 860px; margin: 0 auto; padding: 24px; }
+    header { padding-top: 36px; }
+    h1 { margin: 0 0 6px 0; font-size: 28px; }
+    h2 { margin-top: 28px; font-size: 18px; }
+    .card { border: 1px solid rgba(127,127,127,.25); border-radius: 12px; padding: 16px; }
+    .muted { opacity: .8; }
+    a { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+    ul { padding-left: 18px; }
+    .grid { display: grid; gap: 12px; grid-template-columns: 1fr; }
+    @media (min-width: 720px) { .grid { grid-template-columns: 1fr 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>StripFlow Support</h1>
+    <div class="muted">Help, troubleshooting, and contact.</div>
+  </header>
+
+  <main class="grid">
+    <section class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:SUPPORT_EMAIL_HERE">SUPPORT_EMAIL_HERE</a></p>
+      <p class="muted">Include your macOS version and StripFlow version.</p>
+    </section>
+
+    <section class="card">
+      <h2>Common fixes</h2>
+      <ul>
+        <li>Quit and relaunch the app.</li>
+        <li>Update to the latest version from the Mac App Store.</li>
+        <li>Restart your Mac if an external display is involved.</li>
+        <li>Check macOS privacy permissions if you use any system integrations.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>What to include in a support request</h2>
+      <ul>
+        <li>StripFlow version (from the app's About screen)</li>
+        <li>macOS version</li>
+        <li>Steps to reproduce the issue</li>
+        <li>What you expected vs what happened</li>
+        <li>Screenshots if relevant</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Privacy</h2>
+      <p>Privacy policy: <a href="https://havokmega.github.io/stripflow-privacy/">https://havokmega.github.io/stripflow-privacy/</a></p>
+    </section>
+  </main>
+
+  <footer class="muted">
+    <div>© <span id="y"></span> StripFlow</div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
